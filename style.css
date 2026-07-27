@@ -1,0 +1,249 @@
+html::before {
+  content: 'CodePen ♥ The Web';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  font-family: monospace;
+  opacity: 0.6;
+  background: rebeccapurple;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+}<section class="hero">
+
+<div class="slide active">
+<h1>Krishi Seva Kendra</h1>
+<p>Seeds • Crop Protection • Animal Supplements</p>
+<a href="tel:7050365858" class="btn">Call Now</a>
+</div>
+
+<div class="slide">
+<h1>Quality Agriculture Products</h1>
+<p>Best Products for Better Farming</p>
+<a href="https://wa.me/917050365858" class="btn">WhatsApp</a>
+</div>
+
+<div class="slide">
+<h1>Trusted by Farmers</h1>
+<p>Your Reliable Agriculture Partner</p>
+<a href="#" class="btn">View Products</a>
+</div>
+
+</section>.hero{
+height:90vh;
+background:#1b5e20;
+display:flex;
+justify-content:center;
+align-items:center;
+position:relative;
+overflow:hidden;
+}
+
+.slide{
+position:absolute;
+text-align:center;
+color:white;
+opacity:0;
+transition:1s;
+}
+
+.slide.active{
+opacity:1;
+}<script>
+
+let slides=document.querySelectorAll(".slide");
+
+let i=0;
+
+setInterval(()=>{
+
+slides[i].classList.remove("active");
+
+i++;
+
+if(i==slides.length){
+i=0;
+}
+
+slides[i].classList.add("active");
+
+},3000);
+
+</script><section class="section">
+
+<h2 class="title">Featured Products</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=500" alt="Seeds">
+<h3>Hybrid Seeds</h3>
+<p>High Quality Seeds</p>
+<a class="btn" href="https://wa.me/917050365858">Enquire</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=500" alt="Crop Protection">
+<h3>Crop Protection</h3>
+<p>Trusted Agriculture Products</p>
+<a class="btn" href="https://wa.me/917050365858">Enquire</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=500" alt="Animal Supplements">
+<h3>Animal Supplements</h3>
+<p>Healthy Animal Nutrition</p>
+<a class="btn" href="https://wa.me/917050365858">Enquire</a>
+</div>
+
+</div>
+
+</section>.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.card{
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 30px rgba(0,0,0,.15);
+}<section class="search-box">
+
+<input type="text" placeholder="Search Products...">
+
+<button>Search</button>
+
+</section>.search-box{
+
+padding:40px 8%;
+
+display:flex;
+
+justify-content:center;
+
+gap:10px;
+
+}
+
+.search-box input{
+
+width:450px;
+
+max-width:100%;
+
+padding:15px;
+
+border:2px solid #1b5e20;
+
+border-radius:8px;
+
+font-size:17px;
+
+}
+
+.search-box button{
+
+padding:15px 30px;
+
+background:#1b5e20;
+
+color:white;
+
+border:none;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}<section class="section">
+
+<h2 class="title">Best Selling Products</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🌽 Hybrid Maize Seeds</h3>
+
+<p>High Yield Seeds</p>
+
+</div>
+
+<div class="card">
+
+<h3>🌾 Paddy Seeds</h3>
+
+<p>Premium Quality</p>
+
+</div>
+
+<div class="card">
+
+<h3>🐄 Animal Feed Supplement</h3>
+
+<p>Healthy Nutrition</p>
+
+</div>
+
+</div>
+
+</section><section class="section">
+
+<h2 class="title">What Farmers Say</h2>
+
+<div class="cards">
+
+<div class="card">
+⭐⭐⭐⭐⭐
+<h3>Ramesh Kumar</h3>
+<p>Very Good Quality Products.</p>
+</div>
+
+<div class="card">
+⭐⭐⭐⭐⭐
+<h3>Mukesh Singh</h3>
+<p>Trusted Shop and Good Service.</p>
+</div>
+
+<div class="card">
+⭐⭐⭐⭐⭐
+<h3>Anil Yadav</h3>
+<p>Best Agriculture Products.</p>
+</div>
+
+</div>
+
+</section><section class="section">
+
+<h2 class="title">Frequently Asked Questions</h2>
+
+<div class="card">
+<h3>Do you provide home delivery?</h3>
+<p>Please contact us on WhatsApp or Phone.</p>
+</div>
+
+<div class="card">
+<h3>How can I order?</h3>
+<p>You can call us or send your requirement on WhatsApp.</p>
+</div>
+
+</section><footer>
+
+<h2>🌾 Krishi Seva Kendra</h2>
+
+<p>Ramnagar, Katra Road, Muzaffarpur, Bihar - 843103</p>
+
+<p>📞 7050365858</p>
+
+<p>© 2026 All Rights Reserved</p>
+
+</footer>
